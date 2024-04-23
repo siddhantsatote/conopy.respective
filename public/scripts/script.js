@@ -10,3 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
         this.reset();
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Show the preloader initially
+    const preloader = document.getElementById("preloader");
+
+    // Set a timeout to hide the preloader after a certain duration (e.g., 3000 milliseconds)
+    setTimeout(function () {
+        preloader.style.display = "none";
+    }, 2000); // Adjust the duration as needed (in milliseconds)
+});
